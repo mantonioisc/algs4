@@ -10,6 +10,8 @@
 package edu.princeton.cs.algs4;
 
 
+import java.util.Arrays;
+
 /**
  *  The <tt>WeightedQuickUnionUF</tt> class represents a <em>union-find data type</em>
  *  (also known as the <em>disjoint-sets data type</em>).
@@ -189,6 +191,7 @@ public class WeightedQuickUnionUF {
             StdOut.println(p + " " + q);
         }
         StdOut.println(uf.count() + " components");
+        StdOut.println(Arrays.toString(uf.parent));
     }
 
 }
